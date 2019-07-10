@@ -1,15 +1,15 @@
 package bucketplace;
 
 public enum Produits {
-	Coca(10),
-	Oasis(10),
-	JusDeFruits(10),
-	Vodka(40),
-	Wisky(40),
-	Ricard(40),
-	BiereBlanche(25),
-	BiereBrune(25),
-	BiereBlonde(25);
+	COCA(10),
+	OASIS(10),
+	JUSDEFRUITS(10),
+	VODKA(40),
+	WISCKY(40),
+	RICARD(40),
+	BIEREBLANCHE(25),
+	BIEREBRUNE(25),
+	BIEREBLONDE(25);
 	
 	private final int prix;
 	 
