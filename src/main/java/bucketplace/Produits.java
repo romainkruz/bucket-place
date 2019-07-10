@@ -7,9 +7,9 @@ public enum Produits {
 	Vodka(40),
 	Wisky(40),
 	Ricard(40),
-	BièreBlanche(25),
-	BièreBrune(25),
-	BièreBlonde(25);
+	BiereBlanche(25),
+	BiereBrune(25),
+	BiereBlonde(25);
 	
 	private final int prix;
 	 
@@ -18,7 +18,7 @@ public enum Produits {
 		this.prix = prix;
 	}
  
-	/** La méthode accesseur qui renvoit la valeur de l'enum */
+	/** La methode accesseur qui renvoit la valeur de l'enum */
 	public int getPrix() {
 		return this.prix;
 	}
