@@ -29,11 +29,11 @@ public class Stock {
 		stockDispo.put("BiereBlanche", 5.0);
 	}
 
-	private void newList() {
+	public void newList() {
 		list = new HashMap<String, Double>();
 	}
 
-	private void addList(String boisson, double quantite) {
+	public void addList(String boisson, double quantite) {
 		if (list.containsKey(boisson)) {
 			double quantiteNew = list.get(boisson) + quantite;
 			if (quantiteNew <= stockDispo.get(boisson)) {

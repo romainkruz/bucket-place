@@ -1,5 +1,7 @@
 package bucketplace;
 
+import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 public class Commande {
@@ -16,15 +18,16 @@ public class Commande {
 			commanderConso();
 		}
 	}
+
 	public static int Addition(Map<Produits, Double> myEnums) {
-		int res =0;
-		
+		int res = 0;
+
 		int result = 0;
 		for (Entry<Produits, Double> entry : myEnums.entrySet()) {
-		    Produits boisson = entry.getKey();
-		    Object quantite = entry.getValue();
-			 res = boisson.getPrix();
-			 result += res;
+			Produits boisson = entry.getKey();
+			Object quantite = entry.getValue();
+			res = boisson.getPrix();
+			result += res;
 		}
 		return result;
 	}
