@@ -4,11 +4,15 @@ import java.text.MessageFormat;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Stock {
 
 	public Map<String, Double> stockDispo = new HashMap<String, Double>();
 	public Map<String, Double> list;
 
+	private static final Logger LOG = LoggerFactory.getLogger(Stock.class);
 	private static String ALCOOL = "Vodka:Whisky:Ricard:BiereBrune:BiereBlonde:BiereBlanche";
 	private static String NO_ALCOOL = "Coca:Oasis:JusDeFruit";
 	private static String MSG_COMMANDE = "Note : Recommander {0} il ne reste que {1}";
@@ -40,7 +44,7 @@ public class Stock {
 		} else {
 			if (quantite <= stockDispo.get(boisson)) {
 				list.put(boisson, quantite);
-				System.out.println(boisson + "ajouté !");
+				System.out.println(boisson + "ajoutï¿½ !");
 			} else {
 				System.out.println("! Cette boisson n'est plus disponible !");
 			}
