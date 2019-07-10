@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.kruszewski.romain</groupId>
+	<groupId>bucketplace.team</groupId>
 	<version>1.0</version>
-	<artifactId>Java_CGI</artifactId>
+	<artifactId>Bucket-place</artifactId>
 	
 	<properties>
 		<!-- Maven proeprties -->
